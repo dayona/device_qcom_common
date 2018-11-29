@@ -290,6 +290,7 @@ on mmi
     start qcomsysd
     start ptt_ffbm
     start tftp_server
+    start quecserver
 
 on ffbm
     trigger early-fs
