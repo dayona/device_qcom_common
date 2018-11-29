@@ -31,12 +31,12 @@
 
 <GCDB>
   <Version>"1.0"</Version>
-  <PanelId>kd101wx-720p-video</PanelId>
-  <PanelH>kd101wx_720p_video</PanelH>
+  <PanelId>ili9881c-720p-video</PanelId>
+  <PanelH>ili9881c_720p_video</PanelH>
   <PanelEntry>
 
 	<!-- Panel configuration -->
-	<PanelName>"kd101wx 720p video mode dsi panel"</PanelName>
+	<PanelName>"ili9881c 720p video mode dsi panel"</PanelName>
 	<PanelController>"mdss_dsi0"</PanelController>
 	<PanelInterface>10</PanelInterface>
 	<PanelType>0</PanelType>
@@ -55,12 +55,12 @@
 	<!-- Panel Resolution -->
 	<PanelWidth>720</PanelWidth>
 	<PanelHeight>1280</PanelHeight>
-	<HFrontPorch>20</HFrontPorch>
-	<HBackPorch>20</HBackPorch>
-	<HPulseWidth>20</HPulseWidth>
+	<HFrontPorch>52</HFrontPorch>
+	<HBackPorch>100</HBackPorch>
+	<HPulseWidth>36</HPulseWidth>
 	<HSyncSkew>0</HSyncSkew>
-	<VBackPorch>10</VBackPorch>
-	<VFrontPorch>20</VFrontPorch>
+	<VBackPorch>20</VBackPorch>
+	<VFrontPorch>8</VFrontPorch>
 	<VPulseWidth>4</VPulseWidth>
 	<HLeftBorder>0</HLeftBorder>
 	<HRightBorder>0</HRightBorder>
@@ -294,11 +294,11 @@
 	<Lane3State>1</Lane3State>
 
 	<!-- Panel Timing -->
-	<PanelTimings>"0x6f, 0x18, 0x0e, 0x00, 0x38, 0x3e, 0x12, 0x1a, 0x13, 0x03, 0x04, 0x00"</PanelTimings>
+	<PanelTimings>"0x7a, 0x1a, 0x12, 0x00, 0x3e, 0x42, 0x16, 0x1e, 0x14, 0x03, 0x04, 0x00"</PanelTimings>
 	<DSIMDPTrigger>0</DSIMDPTrigger>
 	<DSIDMATrigger>4</DSIDMATrigger>
-	<TClkPost>0x05</TClkPost>
-	<TClkPre>0x18</TClkPre>
+	<TClkPost>0x0A</TClkPost>
+	<TClkPre>0x1D</TClkPre>
 
 	<!-- Backlight -->
 	<BLInterfaceType>1</BLInterfaceType>
