@@ -88,8 +88,8 @@ on boot
     chmod 0660 /dev/ttyHS2
     chown bluetooth bluetooth /dev/ttyHS2
 
-    chmod 0777 /dev/ttyHSL1
-    chown root root /dev/ttyHSL1
+    #chmod 0777 /dev/ttyHSL1
+    #chown root root /dev/ttyHSL1
 
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/device/extldo
     chmod 0660 /sys/class/rfkill/rfkill0/device/extldo
@@ -1059,3 +1059,16 @@ service DiagDaemon /system/vendor/bin/diag_socket_log -f /sdcard/ipaddress.txt
     disabled
     user root
     group root system log qcom_diag net_raw
+
+#MyLogger
+on property:myprop.test=1 
+    start mylogger
+ 
+on property:myprop.test=0
+    stop mylogger
+ 
+service mylogger /system/xbin/mylogger
+    user root
+    group root
+    seclabel u:r:su:s0
+
